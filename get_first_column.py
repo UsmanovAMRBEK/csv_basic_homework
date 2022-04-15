@@ -9,7 +9,7 @@ def get_first_column(data):
     l=[]
     for i in data.split('\n'):
         if i != '':
-            l.append(i.split(',')[0])
+            l.append(i.split(',')[1])
     return l
     
 # Read the csv file
