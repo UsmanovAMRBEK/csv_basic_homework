@@ -7,9 +7,8 @@ def get_first_column(data):
         list: First column.
     """
     l=[]
-    for i in data.split('\n')[1:]:
-        if i != '':
-            l.append(i.split(',')[1])
+    for i in data.split('\n'):
+            l.append(i.split(',')[0])
     return l
     
 # Read the csv file
